@@ -69,7 +69,7 @@ function getPreparedGoods(
         case SORT_FIELD_ALPHABET:
           return good1.localeCompare(good2);
         case SORT_FIELD_LENGTH:
-          return good1[sortField] - good2[sortField];
+          return good1.length - good2.length;
         default:
           return 0;
       }
