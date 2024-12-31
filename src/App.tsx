@@ -56,7 +56,11 @@ export const goodsFromServer = [
 const SORT_FIELD_ALPHABET = 'alph';
 const SORT_FIELD_LENGTH = 'length';
 
-function getPreparedGoods(goods: string[], sortField: string, isReversed: boolean) {
+function getPreparedGoods(
+  goods: string[],
+  sortField: string,
+  isReversed: boolean,
+) {
   const preparedGoods = [...goods];
 
   if (sortField) {
